@@ -45,6 +45,13 @@ namespace RecipeApp
                         Console.WriteLine("Invalid choice. Please enter a number between 1 and 6.");
                         break;
                 }
+        class Recipe
+        {
+            private string[] ingredients;
+            private double[] quantities;
+            private string[] units;
+            private string[] steps;
+
 
 
 
