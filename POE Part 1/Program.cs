@@ -21,5 +21,30 @@ namespace RecipeApp
                     Console.WriteLine("Invalid input. Please enter a number between 1 and 6.");
                     continue;
                 }
+                switch (choice)
+                {
+                    case 1:
+                        recipe.EnterDetails();
+                        break;
+                    case 2:
+                        recipe.DisplayRecipe();
+                        break;
+                    case 3:
+                        recipe.ScaleRecipe();
+                        break;
+                    case 4:
+                        recipe.ResetQuantities();
+                        break;
+                    case 5:
+                        recipe.ClearData();
+                        break;
+                    case 6:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        Console.WriteLine("Invalid choice. Please enter a number between 1 and 6.");
+                        break;
+                }
+
 
 
