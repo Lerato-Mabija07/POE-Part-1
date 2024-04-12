@@ -51,6 +51,17 @@ namespace RecipeApp
             private double[] quantities;
             private string[] units;
             private string[] steps;
+            public void EnterDetails()
+            {
+                Console.WriteLine("Enter the number of ingredients:");
+                int numIngredients;
+                if (!int.TryParse(Console.ReadLine(), out numIngredients) || numIngredients <= 0)
+                {
+                    Console.WriteLine("Invalid input. Please enter a positive integer.");
+                    return;
+                }
+
+
 
 
 
