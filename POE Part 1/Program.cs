@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RecipeApp
+namespace RecipeApplication
 {
     class Program
     {
@@ -63,6 +63,25 @@ namespace RecipeApp
                 ingredients = new string[numIngredients];
                 quantities = new double[numIngredients];
                 units = new string[numIngredients];
+                for (int i = 0; i < numIngredients; i++)
+                {
+                    Console.WriteLine($"Enter the name of ingredient {i + 1}:");
+                    ingredients[i] = Console.ReadLine();
+
+                    Console.WriteLine($"Enter the quantity of {ingredients[i]}:");
+                    double quantity;
+                    if (!double.TryParse(Console.ReadLine(), out quantity) || quantity <= 0)
+                    {
+                        Console.WriteLine("Invalid input. Please enter a positive number.");
+                        return;
+                    }
+                    quantities[i] = quantity;
+
+                    Console.WriteLine($"Enter the unit of measurement for {ingredients[i]}:");
+                    units[i] = Console.ReadLine();
+                }
+
+
 
 
 
