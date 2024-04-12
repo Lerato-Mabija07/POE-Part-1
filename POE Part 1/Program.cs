@@ -80,6 +80,14 @@ namespace RecipeApplication
                     Console.WriteLine($"Enter the unit of measurement for {ingredients[i]}:");
                     units[i] = Console.ReadLine();
                 }
+                Console.WriteLine("Enter the number of steps:");
+                int numSteps;
+                if (!int.TryParse(Console.ReadLine(), out numSteps) || numSteps <= 0)
+                {
+                    Console.WriteLine("Invalid input. Please enter a positive integer.");
+                    return;
+                }
+
 
 
 
