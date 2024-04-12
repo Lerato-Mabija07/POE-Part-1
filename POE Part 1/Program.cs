@@ -87,6 +87,14 @@ namespace RecipeApplication
                     Console.WriteLine("Invalid input. Please enter a positive integer.");
                     return;
                 }
+                steps = new string[numSteps];
+
+                for (int i = 0; i < numSteps; i++)
+                {
+                    Console.WriteLine($"Enter step {i + 1}:");
+                    steps[i] = Console.ReadLine();
+                }
+
 
 
 
