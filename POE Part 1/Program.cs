@@ -1,11 +1,9 @@
 ﻿using System;
 
-namespace Recipe_Application
+namespace RecipeApp
 {
-    class Ingredient
+    class Program
     {
-        public string Name { get; set; }
-        public int NumIngredients { get; set; }
-        public string Description { get; set; }
-    }
-}
+        static void Main(string[] args)
+        {
+            Recipe recipe = new Recipe();
