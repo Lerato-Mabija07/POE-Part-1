@@ -6,6 +6,7 @@ This is an Recipe application that enables users to enter details for a single r
 This application enables users to enter the details of the recipe, display the recipe, .scale the recipe, reset the quantities, clear all the data and exit the application.
 
 Getting Started: 
+
 Open the zipped folder and open the file (POE Part 1.sln) which will take you to Visual Studio. 
 Click on start without bugging (ctrl + F5) to compile the application.
 Follow the on-screen instructions.
